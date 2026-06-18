@@ -1,0 +1,236 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background-color: #111111;
+    color: #ffffff;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+span {
+    color: #e62b1e; /* Classic TED Red */
+}
+
+/* Header */
+header {
+    background-color: rgba(17, 17, 17, 0.95);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #222;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #e62b1e;
+}
+
+.btn-tickets {
+    background-color: #e62b1e;
+    padding: 8px 18px;
+    border-radius: 4px;
+}
+
+.btn-tickets:hover {
+    background-color: #b82016;
+    color: #fff !important;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    color: #ccc;
+}
+
+.hero-buttons .btn {
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn.primary {
+    background-color: #e62b1e;
+    color: #fff;
+}
+
+.btn.primary:hover {
+    background-color: #b82016;
+}
+
+.btn.secondary {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn.secondary:hover {
+    background-color: #fff;
+    color: #111;
+}
+
+/* About Section */
+.about-section {
+    padding: 100px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    color: #aaa;
+}
+
+/* Speakers Section */
+.speakers-section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.speakers-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.speaker-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.speaker-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+    border-bottom: 4px solid #e62b1e;
+}
+
+.speaker-img img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.speaker-card h3 {
+    margin-bottom: 5px;
+}
+
+.speaker-card .title {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    background-color: #0a0a0a;
+    padding: 60px 20px 20px 20px;
+    text-align: center;
+    border-top: 1px solid #222;
+}
+
+.footer-content p {
+    color: #666;
+    font-size: 0.85rem;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.socials a {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #e62b1e;
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: #404040;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Can be paired with JavaScript to toggle */
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+}
