@@ -60,6 +60,47 @@ header {
     color: #e62b1e;
 }
 
+/* Hover Dropdown Mechanics */
+.nav-links li.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1a1a1a;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
+    list-style: none;
+    border-radius: 4px;
+    border: 1px solid #222;
+    padding: 5px 0;
+    z-index: 1100;
+}
+
+.dropdown-content li a {
+    color: #fff !important;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 0.95rem;
+    margin: 0 !important;
+    transition: background 0.2s ease;
+}
+
+.dropdown-content li a:hover {
+    background-color: #e62b1e;
+    color: #fff !important;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .btn-tickets {
     background-color: #e62b1e;
     padding: 8px 18px;
@@ -80,7 +121,7 @@ header {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)), url('images/Group.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)), url('https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -273,21 +314,24 @@ header {
     transform: translateY(-5px);
 }
 
-/* Circular Headshot Wrapper */
 .organizer-avatar {
     width: 130px;
     height: 130px;
     margin: 0 auto 15px auto;
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid #e62b1e; /* Added Red Trim to emphasize roles */
+    border: 3px solid #e62b1e;
     background-color: #111;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Center and crop team photos perfectly inside the circle */
+.organizer-avatar i {
+    font-size: 3.5rem;
+    color: #444;
+}
+
 .organizer-avatar img {
     width: 100%;
     height: 100%;
