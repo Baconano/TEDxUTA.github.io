@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TEDxUTA | Ideas Worth Spreading</title>
     <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
+    <!-- Header / Navigation -->
     <header>
         <div class="navbar">
             <div class="logo">TEDx<span>UTA</span></div>
@@ -16,7 +18,7 @@
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#speakers">Speakers</a></li>
-                    <li><a href="#watch">Watch</a></li>
+                    <li><a href="#organizers">Team</a></li>
                     <li><a href="#contact" class="btn-tickets">Get Tickets</a></li>
                 </ul>
             </nav>
@@ -24,6 +26,7 @@
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <h1>IDEAS WORTH SPREADING</h1>
@@ -35,38 +38,88 @@
         </div>
     </section>
 
+    <!-- About Section -->
     <section id="about" class="about-section">
         <h2>About TEDx<span>UTA</span></h2>
         <p>In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection.</p>
     </section>
 
+    <!-- Speakers Section with Year Tabs -->
     <section id="speakers" class="speakers-section">
-        <h2>Featured Speakers</h2>
-        <div class="speaker-grid">
-            <div class="speaker-card">
-                <div class="speaker-img">
-                    <img src="https://via.placeholder.com/300x350/222/fff?text=Speaker+1" alt="Speaker 1">
+        <h2>TEDxUTA Speakers</h2>
+        
+        <!-- Year Tabs Navigation -->
+        <div class="tab-container">
+            <button class="tab-btn active" onclick="openYear(event, 'year-2026')">2026</button>
+            <!-- Future years can be uncommented and added here: -->
+            <!-- <button class="tab-btn" onclick="openYear(event, 'year-2027')">2027</button> -->
+        </div>
+
+        <!-- 2026 Speaker Content -->
+        <div id="year-2026" class="tab-content active">
+            <div class="speaker-grid">
+                
+                <!-- Speaker 1 -->
+                <div class="speaker-card">
+                    <div class="video-container">
+                        <!-- Replace VIDEO_ID_1 with actual YouTube Video ID -->
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="TEDxUTA Talk 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <h3>Speaker Name 1</h3>
+                    <p class="title">Topic / Profession</p>
                 </div>
-                <h3>Dr. Jane Doe</h3>
-                <p class="title">AI Researcher & Futurist</p>
-            </div>
-            <div class="speaker-card">
-                <div class="speaker-img">
-                    <img src="https://via.placeholder.com/300x350/222/fff?text=Speaker+2" alt="Speaker 2">
+
+                <!-- Speaker 2 -->
+                <div class="speaker-card">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="TEDxUTA Talk 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <h3>Speaker Name 2</h3>
+                    <p class="title">Topic / Profession</p>
                 </div>
-                <h3>John Smith</h3>
-                <p class="title">Environmental Architect</p>
-            </div>
-            <div class="speaker-card">
-                <div class="speaker-img">
-                    <img src="https://via.placeholder.com/300x350/222/fff?text=Speaker+3" alt="Speaker 3">
+
+                <!-- Speaker 3 -->
+                <div class="speaker-card">
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" title="TEDxUTA Talk 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <h3>Speaker Name 3</h3>
+                    <p class="title">Topic / Profession</p>
                 </div>
-                <h3>Sarah Lee</h3>
-                <p class="title">Social Entrepreneur</p>
+
+                <!-- Note: Copy and paste the .speaker-card block above to reach your 15 total speakers! -->
+
             </div>
         </div>
     </section>
 
+    <!-- Organizers Section -->
+    <section id="organizers" class="organizers-section">
+        <h2>Meet the Team</h2>
+        <p class="section-subtitle">The minds behind bringing TEDx to the UTA campus.</p>
+        <div class="organizer-grid">
+            <!-- Organizer 1 -->
+            <div class="organizer-card">
+                <div class="organizer-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                <h3>Organizer Name</h3>
+                <p class="role">Lead Organizer / Licensee</p>
+            </div>
+            <!-- Organizer 2 -->
+            <div class="organizer-card">
+                <div class="organizer-avatar"><i class="fa-solid fa-user"></i></div>
+                <h3>Organizer Name</h3>
+                <p class="role">Executive Producer</p>
+            </div>
+            <!-- Organizer 3 -->
+            <div class="organizer-card">
+                <div class="organizer-avatar"><i class="fa-solid fa-user"></i></div>
+                <h3>Organizer Name</h3>
+                <p class="role">Marketing Lead</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer id="contact">
         <div class="footer-content">
             <div class="footer-logo">TEDx<span>UTA</span></div>
