@@ -17,8 +17,7 @@
             <nav>
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#speakers">Speakers</a></li>
-                    <li><a href="#organizers">Team</a></li>
+                    <li><a href="#archive">Event Archive</a></li>
                     <li><a href="#contact" class="btn-tickets">Get Tickets</a></li>
                 </ul>
             </nav>
@@ -44,25 +43,27 @@
         <p>In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection.</p>
     </section>
 
-    <!-- Speakers Section with Year Tabs -->
-    <section id="speakers" class="speakers-section">
-        <h2>TEDxUTA Speakers</h2>
+    <!-- Unified Event Archive Section (Speakers + Team grouped by Year) -->
+    <section id="archive" class="speakers-section">
+        <h2>Event Archive</h2>
         
         <!-- Year Tabs Navigation -->
         <div class="tab-container">
             <button class="tab-btn active" onclick="openYear(event, 'year-2026')">2026</button>
-            <!-- Future years can be uncommented and added here: -->
+            <!-- When 2027 comes, just uncomment this button: -->
             <!-- <button class="tab-btn" onclick="openYear(event, 'year-2027')">2027</button> -->
         </div>
 
-        <!-- 2026 Speaker Content -->
+        <!-- ==================== 2026 DATA TAB ==================== -->
         <div id="year-2026" class="tab-content active">
+            
+            <!-- 2026 Speakers Sub-heading -->
+            <h3 class="archive-heading">2026 Speakers</h3>
             <div class="speaker-grid">
                 
                 <!-- Speaker 1 -->
                 <div class="speaker-card">
                     <div class="video-container">
-                        <!-- Replace VIDEO_ID_1 with actual YouTube Video ID -->
                         <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="TEDxUTA Talk 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
                     <h3>Speaker Name 1</h3>
@@ -78,45 +79,53 @@
                     <p class="title">Topic / Profession</p>
                 </div>
 
-                <!-- Speaker 3 -->
-                <div class="speaker-card">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" title="TEDxUTA Talk 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <h3>Speaker Name 3</h3>
-                    <p class="title">Topic / Profession</p>
+                <!-- Duplicate the .speaker-card up to 15 items here -->
+
+            </div>
+
+            <!-- 2026 Organizing Team Sub-heading -->
+            <h3 class="archive-heading" style="margin-top: 80px;">2026 Organizing Committee</h3>
+            <div class="organizer-grid">
+                
+                <!-- Organizer 1 -->
+                <div class="organizer-card">
+                    <div class="organizer-avatar"><img src="images/team/Steven.png" alt="Steven Nguyen Headshot">div>
+                    <h3>Steven Nguyen</h3>
+                    <p class="role">Lead Organizer / Licensee</p>
                 </div>
 
-                <!-- Note: Copy and paste the .speaker-card block above to reach your 15 total speakers! -->
+                <!-- Organizer 2 -->
+                <div class="organizer-card">
+                    <div class="organizer-avatar"><i class="fa-solid fa-user"></i></div>
+                    <h3>Organizer Name</h3>
+                    <p class="role">Executive Producer</p>
+                </div>
+
+                <!-- Organizer 3 -->
+                <div class="organizer-card">
+                    <div class="organizer-avatar"><i class="fa-solid fa-user"></i></div>
+                    <h3>Organizer Name</h3>
+                    <p class="role">Marketing Lead</p>
+                </div>
 
             </div>
         </div>
-    </section>
 
-    <!-- Organizers Section -->
-    <section id="organizers" class="organizers-section">
-        <h2>Meet the Team</h2>
-        <p class="section-subtitle">The minds behind bringing TEDx to the UTA campus.</p>
-        <div class="organizer-grid">
-            <!-- Organizer 1 -->
-            <div class="organizer-card">
-                <div class="organizer-avatar"><i class="fa-solid fa-user-tie"></i></div>
-                <h3>Organizer Name</h3>
-                <p class="role">Lead Organizer / Licensee</p>
+        <!-- ==================== FUTURE 2027 DATA TAB (Template Hidden by default) ==================== -->
+        <!--
+        <div id="year-2027" class="tab-content">
+            <h3 class="archive-heading">2027 Speakers</h3>
+            <div class="speaker-grid">
+                 2027 Speaker cards will go here 
             </div>
-            <!-- Organizer 2 -->
-            <div class="organizer-card">
-                <div class="organizer-avatar"><i class="fa-solid fa-user"></i></div>
-                <h3>Organizer Name</h3>
-                <p class="role">Executive Producer</p>
-            </div>
-            <!-- Organizer 3 -->
-            <div class="organizer-card">
-                <div class="organizer-avatar"><i class="fa-solid fa-user"></i></div>
-                <h3>Organizer Name</h3>
-                <p class="role">Marketing Lead</p>
+
+            <h3 class="archive-heading" style="margin-top: 80px;">2027 Organizing Committee</h3>
+            <div class="organizer-grid">
+                 2027 Team cards will go here 
             </div>
         </div>
+        -->
+
     </section>
 
     <!-- Footer -->
