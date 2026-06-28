@@ -27,28 +27,30 @@ header {
     border-bottom: 1px solid #222;
 }
 
-/* Ensure the main header bar stays locked in size */
+/* Navigation Hotbar Container */
 .navbar {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr; /* Two columns: Logo size, and remaining space for links */
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 10px 20px;
-    height: 70px;      /* 🔒 Locks the navbar height explicitly */
-    position: relative; /* Gives the logo an anchoring frame */
+    padding: 0 20px;
+    height: 70px; /* 🔒 Locks the hotbar height perfectly */
 }
 
-/* Position the logo independently from the header flow */
+/* Let the logo container overflow downward naturally without stretching the bar */
 .logo {
-    position: absolute;
-    top: 5px;          /* Distance from the very top edge */
-    left: 20px;         /* Keeps it aligned to the left margins */
-    z-index: 1010;      /* Keeps the logo layered cleanly over sections */
+    height: 70px; /* Matches the navbar height exactly */
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
 .logo a {
     display: block;
+    position: absolute;
+    top: 10px; /* Adjusts how high or low the logo sits inside the bar */
+    left: 0;
     transition: opacity 0.2s ease;
 }
 
@@ -56,12 +58,20 @@ header {
     opacity: 0.85;
 }
 
-/* Push your navigation links to the right to make room for the larger floating logo */
+/* Force your navigation links to stay cleanly aligned inside the hotbar on the right */
 .nav-links {
     display: flex;
     list-style: none;
     align-items: center;
-    margin-left: auto; /* Dynamically forces the links to stay on the far right side */
+    justify-content: flex-end; /* Aligns items to the right */
+    height: 100%;
+    margin: 0;
+}
+
+.nav-links li {
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .nav-links li a {
