@@ -27,25 +27,41 @@ header {
     border-bottom: 1px solid #222;
 }
 
+/* Ensure the main header bar stays locked in size */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px 20px;
+    height: 70px;      /* 🔒 Locks the navbar height explicitly */
+    position: relative; /* Gives the logo an anchoring frame */
 }
 
+/* Position the logo independently from the header flow */
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    letter-spacing: -1px;
+    position: absolute;
+    top: 5px;          /* Distance from the very top edge */
+    left: 20px;         /* Keeps it aligned to the left margins */
+    z-index: 1010;      /* Keeps the logo layered cleanly over sections */
 }
 
+.logo a {
+    display: block;
+    transition: opacity 0.2s ease;
+}
+
+.logo a:hover {
+    opacity: 0.85;
+}
+
+/* Push your navigation links to the right to make room for the larger floating logo */
 .nav-links {
     display: flex;
     list-style: none;
     align-items: center;
+    margin-left: auto; /* Dynamically forces the links to stay on the far right side */
 }
 
 .nav-links li a {
