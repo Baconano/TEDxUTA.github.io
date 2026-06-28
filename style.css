@@ -382,19 +382,7 @@ footer {
     font-size: 0.8rem;
     color: #404040;
 }
-.logo {
-    display: flex;
-    align-items: center;
-}
 
-.logo a {
-    display: block;
-    transition: opacity 0.2s ease;
-}
-
-.logo a:hover {
-    opacity: 0.85; /* Soft fade highlight look on hover */
-}
 /* Animations & Responsiveness */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
