@@ -11,7 +11,11 @@
 
     <header>
         <div class="navbar">
-            <div class="logo"><a href="/" style="color: white; text-decoration: none;">TEDx<span>UTA</span></a></div>
+            <div class="logo">
+                <a href="/">
+                    <img src="images/logo.png" alt="TEDxUTA Logo" style="height: 35px; width: auto; display: block;">
+                </a>
+            </div>
             <nav>
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
@@ -46,30 +50,17 @@
         <p>In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection.</p>
     </section>
 
-    <section id="contact" class="about-section" style="border-top: 1px solid #222; padding-top: 80px; padding-bottom: 80px;">
+    <section id="contact" class="about-section" style="border-top: 1px solid #222; padding-top: 80px; padding-bottom: 100px;">
         <h2>Get in Touch</h2>
-        <p style="color: #888; max-width: 600px; margin: 0 auto 40px auto; font-size: 1.1rem;">
-            Have questions about the event, sponsorship opportunities, or want to join the organizing committee next year? Send us a message!
+        <p style="color: #888; max-width: 600px; margin: 0 auto 25px auto; font-size: 1.1rem; line-height: 1.6;">
+            Have questions about the event, sponsorship opportunities, or want to join the organizing committee next year? Reach out to us directly at:
         </p>
         
-        <form id="tedxContactForm" onsubmit="handleFormMail(event)" class="contact-form">
-            <div class="form-group">
-                <label for="userName">Name</label>
-                <input type="text" id="userName" required placeholder="Your Name">
-            </div>
-            
-            <div class="form-group">
-                <label for="userEmail">Email</label>
-                <input type="email" id="userEmail" required placeholder="your.email@example.com">
-            </div>
-            
-            <div class="form-group">
-                <label for="userMessage">Message</label>
-                <textarea id="userMessage" rows="5" required placeholder="Type your message here..."></textarea>
-            </div>
-            
-            <button type="submit" class="btn primary" style="width: 100%; margin-top: 10px;">Submit Message</button>
-        </form>
+        <p style="margin: 0;">
+            <a href="mailto:organizers@tedxuta.com" style="color: #e62b1e; font-size: 1.8rem; font-weight: bold; text-decoration: none; letter-spacing: 0.5px; transition: color 0.2s ease;">
+                organizers@tedxuta.com
+            </a>
+        </p>
     </section>
 
     <footer>
