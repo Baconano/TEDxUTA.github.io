@@ -10,27 +10,33 @@
 <body>
 
     <!-- Header Navigation -->
-    <header>
-        <div class="navbar">
-            <div class="logo">
-                <a href="/">
-                    <img src="/images/logo.png" alt="TEDxUTA Logo" style="height: 100px; width: auto; display: block; margin-bottom: -30px; position: relative; top: 5px;">
-                </a>
-            </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html#about">About</a></li>
-                    <li class="dropdown">
-                        <a href="archive.html" class="dropbtn" style="color: #e62b1e;">Archive <i class="fa-solid fa-chevron-down" style="font-size: 0.8rem; margin-left: 5px;"></i></a>
-                        <ul class="dropdown-content">
-                            <li><a href="2026.html">2026 Event</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="index.html#contact" class="btn-tickets">Get Tickets</a></li>
-                </ul>
-            </nav>
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <a href="/">
+                <img src="/images/logo.psng" alt="TEDxUTA Logo" style="height: 50px; width: auto; display: block; object-fit: contain;">            
+            </a>
         </div>
-    </header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about"><i class="fa-solid fa-circle-info" style="margin-right: 5px;"></i>About</a></li>
+                
+                <!-- Main Archive links to archive.html; Dropdown links to specific years -->
+                <li class="dropdown">
+                    <a href="archive.html" class="dropbtn">Archive <i class="fa-solid fa-chevron-down" style="font-size: 0.8rem; margin-left: 5px;"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="2026.html">2026 Event</a></li>
+                        <!-- Future years can easily be added here -->
+                        <!-- <li><a href="2025.html">2025 Event</a></li> -->
+                    </ul>
+                </li>
+                
+                <li><a href="#contact" class="btn-tickets"><i class="fa-solid fa-ticket" style="margin-right: 6px;"></i>Get Tickets</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+    </div>
+</header>
 
     <!-- Archive Hub Content -->
     <section class="about-section" style="padding-top: 140px; padding-bottom: 80px;">
