@@ -3,214 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Archive | TEDxUTA</title>
+    <title>Archive Hub | TEDxUTA</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
+    <!-- Header Navigation -->
     <header>
         <div class="navbar">
             <div class="logo">
                 <a href="/">
-                    <img src="images/logo.PNG" alt="TEDxUTA Logo" style="height: 100px; width: auto; display: block;">
+                    <img src="images/logo.png" alt="TEDxUTA Logo" style="height: 100px; width: auto; display: block; margin-bottom: -30px; position: relative; top: 5px;">
                 </a>
-            </div>            <nav>
+            </div>
+            <nav>
                 <ul class="nav-links">
-                    <li><a href="/">Home</a></li>
                     <li><a href="index.html#about">About</a></li>
-                    
                     <li class="dropdown">
-                        <a href="#" class="dropbtn" style="color: #e62b1e;">Archive <i class="fa-solid fa-chevron-down" style="font-size: 0.8rem; margin-left: 5px;"></i></a>
+                        <a href="archive.html" class="dropbtn" style="color: #e62b1e;">Archive <i class="fa-solid fa-chevron-down" style="font-size: 0.8rem; margin-left: 5px;"></i></a>
                         <ul class="dropdown-content">
-                            <li><a href="#year-2026" onclick="openYear(event, 'year-2026')">2026</a></li>
+                            <li><a href="2026.html">2026 Event</a></li>
                         </ul>
                     </li>
-                    
                     <li><a href="index.html#contact" class="btn-tickets">Get Tickets</a></li>
                 </ul>
             </nav>
-            <div class="menu-toggle"><i class="fa-solid fa-bars"></i></div>
         </div>
     </header>
 
-    <section id="archive" class="speakers-section" style="margin-top: 100px;">
-        <h2>Event Archive</h2>
-        
-        <div class="tab-container">
-            <button class="tab-btn active" onclick="openYear(event, 'year-2026')">2026</button>
-        </div>
+    <!-- Archive Hub Content -->
+    <section class="about-section" style="padding-top: 140px; padding-bottom: 80px;">
+        <h2>TEDxUTA <span>Event Archive</span></h2>
+        <p style="color: #888; max-width: 600px; margin: 0 auto 40px auto;">
+            Explore talks, themes, and photo galleries from our past and ongoing TEDxUTA conferences.
+        </p>
 
-        <div id="year-2026" class="tab-content active">
+        <!-- Cards for Each Year -->
+        <div class="archive-grid" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; max-width: 1000px; margin: 0 auto;">
             
-            <h3 class="archive-heading">2026 Speakers</h3>
-            <div class="speaker-grid">
-                <div class="speaker-card">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/1EBwcfvQA6Y?si=X-SvrUl3j07AP-9q" title="TEDxUTA Talk 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <h3>Agustín Marín</h3>
-                    <p class="title">The New Executive Skill: Thinking and Communicating with AI / Communication Strategist and Researcher</p>
-                </div>
-
-                <div class="speaker-card">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/9PhUdJvKzvE?si=02cGXXaRY88uHCoA" title="TEDxUTA Talk 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <h3>Annelise Soonyadeth</h3>
-                    <p class="title">Perform For Yourself / Computer Science Student</p>
-                </div>
-
-                <div class="speaker-card">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/wCnndKH44hs?si=Dx8vkBudTKrqjBLP" title="TEDxUTA Talk 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <h3>Ashley Khuon</h3>
-                    <p class="title">How to Aura Farm by Being a Good Person / Software Engineer At JPMC</p>
-                </div>
-
-                <div class="speaker-card">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/j5q68MnDgJ4?si=EZKfcIsATY3dC9dY" title="TEDxUTA Talk 4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <h3>Huey Vu</h3>
-                    <p class="title">You aren't behind. You're just on a different road.  / Technology Sales Professional</p>
-                </div>
-
-                <div class="speaker-card">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/V61zhTLKnsA?si=Up6EAJ6Dw8_i8_P8" title="TEDxUTA Talk 5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <h3>Jyima Ofori-Atta</h3>
-                    <p class="title">Mindful For What? / Fitness Personal Coach</p>
-                </div>
-
-                <div class="speaker-card">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/iwgFm87vu78?si=DV7fjjE-2fjkIcfH" title="TEDxUTA Talk 6" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <h3>Kevin Sakamoto</h3>
-                    <p class="title">Rescuing human dignity from the AI interview / Adjunct Professor at California State University College of Business</p>
-                </div>
-
-                <div class="speaker-card">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/2mKi3nNfuuw?si=puXkAS5HvBWpOjIX" title="TEDxUTA Talk 7" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <h3>Mei Lin</h3>
-                    <p class="title">Build Your Career Digital Agent / Innovation Strategist at the University of Texas at Arlington</p>
-                </div>
-
-                <div class="speaker-card">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/qjzTcPLIlKA?si=mqhXZLzO6reYVCAs" title="TEDxUTA Talk 8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <h3>Muhammad Khurram</h3>
-                    <p class="title">Weaponizing My Weaknesses / Computer Science Student</p>
-                </div>
-                
-                <div class="speaker-card">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/EWJwgoTiZUU?si=nz7K5ugEnzl32JA1" title="TEDxUTA Talk 9" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <h3>Muhieddine Mneimne</h3>
-                    <p class="title">The Bet That Became Me / Marketing Major</p>
-                </div>
-
-                <div class="speaker-card">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/EWJwgoTiZUU?si=nz7K5ugEnzl32JA1" title="TEDxUTA Talk 10" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <h3>Nhut Phung</h3>
-                    <p class="title">The Bet That Became Me / Electrical Engineering Student</p>
-                </div>
-
-                <div class="speaker-card">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/LFoX67JpzPU?si=2UZ2Wm_pb2N7JJSo" title="TEDxUTA Talk 11" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <h3>Salem Alonge</h3>
-                    <p class="title">You're Not Behind. You're Untrained / Computer Science Student</p>
-                </div>
-                
-                <div class="speaker-card">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/bX2GhQel4Ks?si=TFSoV6vWDv_FFtB2" title="TEDxUTA Talk 12" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <h3>Simon Wang</h3>
-                    <p class="title">Please Reject Me / AI Business Solutions Engineering at Microsoft</p>
-                </div>
-
-                <div class="speaker-card">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/n6lArf3yevs?si=l8kMXFET2TMn83bG" title="TEDxUTA Talk 13" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <h3>Sophia Khuon</h3>
-                    <p class="title">How do labels confine you? / Biology Student</p>
-                </div>
-
-                <div class="speaker-card">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/62Vp0xwzeRY?si=ipFWVjASUgzhQ07j" title="TEDxUTA Talk 14" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-                    <h3>Tyler Le</h3>
-                    <p class="title">Rocket of growth and discovery? / Finance Student</p>
-                </div>
+            <!-- 2026 Card -->
+            <div class="archive-card" style="background: #161616; border: 1px solid #252525; border-radius: 8px; padding: 30px; width: 300px; text-align: left;">
+                <h3 style="color: #e62b1e; font-size: 2rem; margin-bottom: 10px;">2026</h3>
+                <h4 style="color: #fff; margin-bottom: 15px;">Theme: Potential</h4>
+                <p style="color: #888; font-size: 0.95rem; margin-bottom: 20px;">
+                    Discover the groundbreaking ideas, local speakers, and highlights from our 2026 conference.
+                </p>
+                <a href="2026.html" class="btn primary" style="display: inline-block; padding: 10px 20px; text-decoration: none;">View 2026 Archive</a>
             </div>
 
-            <h3 class="archive-heading" style="margin-top: 80px;">2026 Organizing Committee</h3>
-            <div class="organizer-grid">
-                <div class="organizer-card">
-                    <div class="organizer-avatar"><img src="images/team/Steven2.png" alt="Steven Nguyen Headshot"></div>
-                    <h3>Steven Nguyen</h3>
-                    <p class="role">Lead Organizer / Licensee</p>
-                </div>
-
-                <div class="organizer-card">
-                    <div class="organizer-avatar"><img src="images/team/Britney.jpg" alt="Britney Do Headshot"></div>
-                    <h3>Britney Do</h3>
-                    <p class="role">Marketing/Communications</p>
-                </div>
-
-                <div class="organizer-card">
-                    <div class="organizer-avatar"><img src="images/team/Gurpreet.JPG" alt="Gurpreet Headshot"></div>
-                    <h3>Gurpreet Banwait</h3>
-                    <p class="role">Marketing/Communications</p>
-                </div>
-
-                <div class="organizer-card">
-                    <div class="organizer-avatar"><img src="images/team/ChrisT.jpg" alt="Christopher Tran Headshot"></div>
-                    <h3>Christopher Tran</h3>
-                    <p class="role">Operations</p>
-                </div>
-                
-                <div class="organizer-card">
-                    <div class="organizer-avatar"><img src="images/team/Paul.jpg" alt="Paul Dang Headshot"></div>
-                    <h3>Paul Dang</h3>
-                    <p class="role">Operations</p>
-                </div>
-
-                <div class="organizer-card">
-                    <div class="organizer-avatar"><img src="images/team/Lisa.jpeg" alt="Lisa Le Headshot"></div>
-                    <h3>Lisa Le</h3>
-                    <p class="role">Operations</p>
-                </div>
-    
-                <div class="organizer-card">
-                    <div class="organizer-avatar"><img src="images/team/StevenD.jpg" alt="Steven Dau Headshot"></div>
-                    <h3>Steven Dau</h3>
-                    <p class="role">Operations</p>
-                </div>
-
-                <div class="organizer-card">
-                    <div class="organizer-avatar"><img src="images/team/ChrisW.jpg" alt="Christopher Wu Headshot"></div>
-                    <h3>Christopher Wu</h3>
-                    <p class="role">Operations</p>
-                </div>
-            </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-logo">TEDx<span>UTA</span></div>
