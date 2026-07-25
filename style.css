@@ -28,30 +28,36 @@ header {
 }
 
 /* Navigation Hotbar Container */
+/* Navigation Header Bar */
 .navbar {
-    display: grid;
-    grid-template-columns: auto 1fr; /* Two columns: Logo size, and remaining space for links */
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    height: 70px; /* 🔒 Locks the hotbar height perfectly */
+    height: 80px; /* Locked hotbar height */
 }
 
-/* Let the logo container overflow downward naturally without stretching the bar */
+/* Logo Alignment */
 .logo {
-    height: 70px; /* Matches the navbar height exactly */
     display: flex;
     align-items: center;
-    position: relative;
+    justify-content: center;
+    height: 100%;
 }
 
 .logo a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logo img {
+    height: 100px; /* Set your preferred size here */
+    width: auto;
     display: block;
-    position: absolute;
-    top: 10px; /* Adjusts how high or low the logo sits inside the bar */
-    left: 0;
-    transition: opacity 0.2s ease;
+    object-fit: contain;
 }
 
 .logo a:hover {
